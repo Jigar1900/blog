@@ -17,6 +17,7 @@
     gem 'elasticsearch-rails'
 
 - and add this lines to your model articles
+
     require 'elasticsearch/model'
     include Elasticsearch::Model
     include Elasticsearch::Model::Callbacks
