@@ -3,7 +3,6 @@ class SearchController < ApplicationController
     if params[:q].nil?
       @articles = []
     else
-      binding.pry
       @articles = Article.search params[:q]
     end
   end
